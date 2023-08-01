@@ -103,6 +103,7 @@ const errorMessage = () => {
                   onChange={handlePassword}
                 />
               </div>
+              <div id="emlvalidation"></div>
               <div className="my-3">
                 <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link> </p>
               </div>

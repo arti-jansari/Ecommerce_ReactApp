@@ -25,6 +25,7 @@ const Register = () => {
     };
     let user = [];
     const handleSubmit = (e) => {
+        debugger;
         e.preventDefault();
         if (name === '' || email === '' || password === '') {
             setError(true);
@@ -139,4 +140,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Register;
