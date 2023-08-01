@@ -84,19 +84,19 @@ const Products = () => {
 
         {filter.map((product) => {
           return (
-            <div id={product.id} key={product.id} className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-              <div className="card text-center h-100" key={product.id}>
+            <div id={product.id} key={product.id} className="col-md-3 col-sm-6 col-xs-8 col-12 mb-4">
+              <div className="card text-center bg-dark h-100" key={product.id}>
                 <img
                   className="card-img-top p-3"
                   src={product.image}
                   alt="Card"
-                  height={300}
+                  height={250}
                 />
                 <div className="card-body">
-                  <h5 className="card-title">
+                  <h5 className="card-title text-light">
                     {product.title.substring(0, 12)}...
                   </h5>
-                  <p className="card-text">
+                  <p className="card-text text-light">
                     {product.description.substring(0, 90)}...
                   </p>
                 </div>
@@ -106,10 +106,10 @@ const Products = () => {
                     <li className="list-group-item">Vestibulum at eros</li> */}
                 </ul>
                 <div className="card-body">
-                  <Link to={"/product/" + product.id} className="btn btn-dark m-1">
+                  <Link to={"/product/" + product.id} className="btn btn-outline-light btn-sm  m-1">
                     Buy Now
                   </Link>
-                  <button className="btn btn-dark m-1" onClick={() => addProduct(product)}>
+                  <button className="btn btn-outline-light btn-sm  m-1" onClick={() => addProduct(product)}>
                     Add to Cart
                   </button>
                 </div>
