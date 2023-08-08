@@ -12,7 +12,7 @@ const Navbar = () => {
         element.classList.toggle("dark");
     }
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-top">
+        <nav className="navbar navbar-expand-lg  py-3 sticky-top">
             <div className="container">
                 <NavLink className="navbar-brand fw-bold fs-4 px-2" to="/"> Arti</NavLink>
                 <button className="navbar-toggler mx-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,9 +35,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <div className="buttons text-center">
-                        <NavLink to="/login" className="btn btn-outline-dark m-2"><i className="fa fa-sign-in-alt mr-1"></i> Login</NavLink>
-                        <NavLink to="/register" className="btn btn-outline-dark m-2"><i className="fa fa-user-plus mr-1"></i> Register</NavLink>
-                        <NavLink to="/cart" className="btn btn-outline-dark m-2"><i className="fa fa-cart-shopping mr-1"></i> Cart ({state.length}) </NavLink>
+                        <NavLink to="/login" className="m-2"><i className="fa fa-sign-in-alt mr-1"></i> Login</NavLink>
+                        <NavLink to="/register" className=" m-2"><i className="fa fa-user-plus mr-1"></i> Register</NavLink>
+                        <NavLink to="/cart" className="m-2"><i className="fa fa-cart-shopping mr-1"></i> Cart ({state.length}) </NavLink>
                         <button onclick={handleswitch}>Switch mode</button>
                     </div>
                 </div>

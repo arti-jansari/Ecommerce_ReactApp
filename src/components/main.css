@@ -2,3 +2,24 @@
     background-color: #222;
     color: #e6e6e6;
 }
+body{
+    background-color: #03045E;
+    color: #ADE8F4;
+}
+button {
+    background-color:#0077B6 !important; 
+    color: #03045E !important;
+    border: #90E0EF !important;
+    border-radius: 5%;
+    padding: 5px 7px;
+}
+.card  {
+    background-color:#023E8A
+}
+a {
+    color: #90E0EF !important;
+    padding: 5px 1px;
+}
+.navbar  {
+    background-color: #023E8A;
+}
