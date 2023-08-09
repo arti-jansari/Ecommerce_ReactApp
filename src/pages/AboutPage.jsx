@@ -1,5 +1,6 @@
 import React from 'react'
 import { Footer, Navbar } from "../components";
+import "../components/main.css"
 const AboutPage = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const AboutPage = () => {
       <div className="container my-3 py-3">
         <h1 className="text-center">About Us</h1>
         <hr />
-        <p className="lead text-center">
+        <p className="lead1 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
           facere doloremque veritatis odit similique sequi. Odit amet fuga nam
           quam quasi facilis sed doloremque saepe sint perspiciatis explicabo

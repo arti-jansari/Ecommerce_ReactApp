@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
-
+import "../components/main.css"
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -92,21 +92,18 @@ const Products = () => {
                   alt="Card"
                   height={250}
                 />
-                <div className="card-body">
+                <div className="card-body py-0">
                   <h5 className="card-title ">
                     {product.title.substring(0, 12)}...
                   </h5>
-                  <p className="card-text ">
-                    {product.description.substring(0, 90)}...
-                  </p>
-                </div>
+                                </div>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item lead w-50 m-auto">$ {product.price}</li>
                   {/* <li className="list-group-item">Dapibus ac facilisis in</li>
                     <li className="list-group-item">Vestibulum at eros</li> */}
                 </ul>
                 <div className="card-body">
-                  <Link to={"/product/" + product.id} className=" m-1">
+                  <Link to={"/product/" + product.id} className=" m-1 buyNow">
                     Buy Now
                   </Link>
                   <button className=" m-1" onClick={() => addProduct(product)}>
