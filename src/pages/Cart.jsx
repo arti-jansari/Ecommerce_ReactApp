@@ -12,7 +12,7 @@ const Cart = () => {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-md-12 py-5 bg-light text-center">
+          <div className="col-md-12 py-5 bg-primary text-center">
             <h4 className="p-3 display-5">Your Cart is Empty</h4>
             <Link to="/" className="btn  btn-outline-dark mx-4">
               <i className="fa fa-arrow-left"></i> Continue Shopping
@@ -55,7 +55,7 @@ const Cart = () => {
                     {state.map((item) => {
                       return (
                         <div key={item.id}>
-                          <div className="row d-flex align-items-center">
+                          <div className="row d-flex align-items-start">
                             <div className="col-lg-3 col-md-12">
                               <div
                                 className="bg-image rounded"
@@ -73,7 +73,7 @@ const Cart = () => {
 
                             <div className="col-lg-5 col-md-6">
                               <p>
-                                <strong>{item.title}</strong>
+                                {item.title}
                               </p>
                               {/* <p>Color: blue</p>
                               <p>Size: M</p> */}
@@ -123,7 +123,7 @@ const Cart = () => {
               </div>
               <div className="col-md-4">
                 <div className="card mb-4">
-                  <div className="card-header py-3 bg-light">
+                  <div className="card-header py-3 bg-info">
                     <h5 className="mb-0">Order Summary</h5>
                   </div>
                   <div className="card-body">
@@ -147,7 +147,7 @@ const Cart = () => {
 
                     <Link
                       to="/checkout"
-                      className="btn btn-dark btn-lg btn-block"
+                      className="button"
                     >
                       Go to checkout
                     </Link>

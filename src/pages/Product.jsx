@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { addCart } from "../redux/action";
 
 import { Footer, Navbar } from "../components";
+import "../components/main.css"
 
 const Product = () => {
   const { id } = useParams();
@@ -78,19 +79,19 @@ const Product = () => {
             <div className="col-md-6 col-md-6 py-5">
               <h4 className="text-uppercase text-muted">{product.category}</h4>
               <h1 className="display-5">{product.title}</h1>
-              <p className="lead">
+              <p className="leadrating">
                 {product.rating && product.rating.rate}{" "}
                 <i className="fa fa-star"></i>
               </p>
               <h3 className="display-6  my-4">${product.price}</h3>
-              <p className="lead">{product.description}</p>
+              <p className="leadrating">{product.description}</p>
               <button
-                className="btn btn-outline-dark"
+                className=""
                 onClick={() => addProduct(product)}
               >
                 Add to Cart
               </button>
-              <Link to="/cart" className="btn btn-dark mx-3">
+              <Link to="/cart" className="buton ml-3">
                 Go to Cart
               </Link>
             </div>
@@ -138,7 +139,7 @@ const Product = () => {
                     height={300}
                     width={300}
                   />
-                  <div className="card-body">
+                  <div className="card-body py-0">
                     <h5 className="card-title">
                       {item.title.substring(0, 15)}...
                     </h5>
@@ -149,12 +150,12 @@ const Product = () => {
                   <div className="card-body">
                     <Link
                       to={"/product/" + item.id}
-                      className="btn btn-dark m-1"
+                      className="buton m-1"
                     >
                       Buy Now
                     </Link>
                     <button
-                      className="btn btn-dark m-1"
+                      className=""
                       onClick={() => addProduct(item)}
                     >
                       Add to Cart

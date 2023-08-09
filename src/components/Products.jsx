@@ -106,7 +106,7 @@ const Products = () => {
                   <Link to={"/product/" + product.id} className=" m-1 buyNow">
                     Buy Now
                   </Link>
-                  <button className=" m-1" onClick={() => addProduct(product)}>
+                  <button className="m-1" onClick={() => addProduct(product)}>
                     Add to Cart
                   </button>
                 </div>
