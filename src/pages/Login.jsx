@@ -41,7 +41,7 @@ const handleSubmit = (e) => {
         navigate('/');
       } else {
         document.getElementById("emlvalidation").innerHTML =
-          "* Incorrect username or password";
+          "* Incorrect userName or password";
       }
   }
 }
