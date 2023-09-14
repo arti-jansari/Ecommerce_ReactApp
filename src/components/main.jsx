@@ -1,4 +1,5 @@
 import React from "react";
+import image1 from '../../public/assets/Mainimage.jpg'
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
         <div className="card bg-dark text-white border-0 mx-3">
           <img
             className="card-img img-fluid"
-            src="./assets/mainimage.jpg"
+            src={image1}
             alt="Card"
             height={100}
             style={{height: "80vh"}}
